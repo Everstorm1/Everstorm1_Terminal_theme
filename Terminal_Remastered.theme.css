@@ -8,9 +8,11 @@
 /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
 @import"https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap";
 :root,.theme-dark,.theme-light{--highlight: rgb(var(--rgb-highlight));
+--rgb-highlight: 4, 217, 255;
+--highlight: rgb(255, 100, 0);
 --rgb-background: 0, 9, 0;
 --background: rgb(var(--rgb-background));
---text: rgb(var(--rgb-text));
+--text: #64d688;
 --rgb-close-button: 212, 18, 39;
 --close-button: rgb(var(--rgb-close-button));
 --rgb-online-color: 57, 255, 20;
@@ -28,14 +30,7 @@
 --scrollbar-auto-track: transparent;
 --scrollbar-auto-scrollbar-color-track: transparent;
 --transition-time: .3s;
---background-image: unset;
---background-position: center;
---background-size: cover;
---background-blur: 5px;
 --background-brightness: 100%;
---title-image: url("https://commandcrafterhd.github.io/Fallout4TerminalTheme/svg/title.svg");
---title-image-repeat: no-repeat;
---title-image-size: cover;
 --title-image-color: var(--highlight);
 --title-image-width: 240px;
 --title-image-height: 14px;
@@ -62,7 +57,7 @@
 --chat-input-container-background: var(--background);
 --spoiler-hidden-background: var(--highlight);
 --spoiler-revealed-background: rgba(var(--rgb-highlight), 20%);
---input-background: var(--background);
+ /* --input-background: var(--background); */
 --textbox-markdown-syntax: var(--highlight);
 --logo-primary: var(--highlight);
 --control-brand-foreground: var(--highlight);
@@ -247,27 +242,81 @@ html::after{content:" ";
 
 /* CUSTOMIZE COLORS IN HERE! */
 :root {
-    --rgb-highlight: 74, 239, 152; /* The main highlight color */
-    --rgb-background: 0, 9, 0; /* The main background color */
-    --rgb-text: 74, 239, 152; /* The color (almost) all text should use */
+    --rgb-text: 111, 239, 152; /* The color (almost) all text should use */
     --rgb-close-button: 212, 18, 39; /* The main "close this" or "deny" color */
-    --rgb-online-color: 57, 255, 20; /* The color used in the "online" user status symbol */
-    --rgb-afk-color: 255, 255, 51; /* The color used in the "idle" user status symbol */
+    --rgb-online-color: 80, 255, 80; /* The color used in the "online" user status symbol */
+    --rgb-afk-color: 255, 255, 10; /* The color used in the "idle" user status symbol */
     --rgb-dnd-color: 255, 0, 0; /* The color used in the "do not disturb" user status symbol */
     --rgb-streaming-color: 188, 19, 254; /* The color used in the "streaming X" user status symbol */
   
     --transition-time: .3s; /* How fast animations added by the theme happen. Default is 0.3 seconds */
   
-    --background-image: unset; /* To add an image, replace unset with url(https://www.YOUR-URL-HERE.com) */
+    --background-image: url("https://github.com/Everstorm1/LogoRepoEverstorm1/blob/master/tv.jpg");
     --background-position: center; /* Positions the background image */
     --background-size: cover; /* Scales the background image */
     --background-blur: 5px; /* Blurs the image which usually helps with readability of text infront of it */
     --background-brightness: 100%; /* Changes the background images brightness */
     
-    --title-image: url("https://B4T3S.github.io/Fallout4TerminalTheme/svg/title.svg"); /* The .svg file used for the "ROBCO Industries (TM) terminal" title */
+    /* CUSTOM TITLE HERE:  */
+    --title-image: url("https://raw.githubusercontent.com/Everstorm1/LogoRepoEverstorm1/master/EveLogoFile.svg");
+    /* Dimensions: */
     --title-image-repeat: no-repeat; /* If the title image should repeat */
     --title-image-size: cover; /* The size of the title image */
     --title-image-color: var(--highlight); /* The color used for the title image */
-    --title-image-width: 240px; /* The width of the title image */
-    --title-image-height: 14px; /* The height of the title image */
+    --title-image-width: 400px; /* The width of the title image */
+    --title-image-height: 16px; /* The height of the title image */
+    /* ----------------------- */
+
+    /* ALL COLORS HERE */
+  --highlight: rgb(255, 100, 0);
+  --background: #040A06;
+  --text-color: #6FEF98;
+  --close-button: var(--dnd-color) !important;
+  --online-color: #39ff14;
+  --afk-color: #FFFF33;
+  --dnd-color: #FF0000;
+  --streaming-color: #bc13fe;
+  --hover-color: #ff3718;
+  --active-color: #ff7700;
+  --link-color: #006eff;
+  --focusprimary-color: #ffffff;
+    /* ----------------------------------------------- */
+
+  --rs-online-color: var(--online-color);
+  --rs-idle-color: var(--afk-color);
+  --rs-dnd-color: var(--dnd-color);
+  --rs-offline-color: gray;
+  --rs-invisible-color: gray;
+  --rs-streaming-color: var(--stream-color);
+  --interactive-hover: var(--hover-color);
+  --interactive-active: var(--active-color);
+  --text-link: var(--link-color);
+  --bdfdb-blurple: var(--highlight);
+  --logo-primary: var(--highlight);
+  --focus-primary: var(--focusprimary-color);
+  --radio-group-dot-foreground: var(--highlight);
+  --scrollbar-thin-thumb: var(--highlight);
+  --scrollbar-auto-thumb: var(--highlight);
+  --scrollbar-auto-scrollbar-color-thumb: var(--highlight);
+  --scrollbar-thin-track: var(--background);
+  --scrollbar-auto-track: var(--background);
+  --scrollbar-auto-scrollbar-color-track: var(--background);
+  --activity-card-background: var(--background);
+  --background-primary: var(--background);
+  --background-mobile-primary: var(--background);
+  --background-secondary: var(--background);
+  --background-mobile-secondary: var(--background);
+  --background-secondary-alt: var(--background);
+  --background-tertiary: var(--background);
+  --background-accent: var(--background);
+  --background-floating: var(--background);
+  --text-normal: var(--text-color);
+  --text-muted: var(--text-color);
+  --header-primary: rgb(120, 200, 10);
+  --header-secondary: rgb(120, 200, 10);
+  --channels-default:var(--text-color);
+
+  --interactive-normal: var(--text-color);
+  --channeltextarea-background: var(--background);
+  --textbox-markdown-syntax: var(--background);
   }
